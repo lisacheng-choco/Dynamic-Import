@@ -111,7 +111,7 @@ pip install -r requirements.txt
 
 There are two solutions:
 1. `solution_1`: without dynamic import modules
-2. `solution_2`: without dynamic import modules
+2. `solution_2`: with dynamic import modules
 
 There are two existing data source:
 1. `datasource_a`
