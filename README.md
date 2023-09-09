@@ -1,5 +1,13 @@
 # Dynamic-Import
-Learn how to dynamically import modules and classes in Python
+Learn how to dynamically import modules and classes in Python.
+
+- [Dynamic-Import](#dynamic-import)
+  - [Project Introduction](#project-introduction)
+    - [Background](#background)
+    - [Solution](#solution)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Usage](#usage)
 
 ## Project Introduction
 ### Background
@@ -34,16 +42,17 @@ def transform_data(dtasource_name):
 
 However, It becomes a challenge while the new data source and transformation method are introduced. The impacts are:
 
-1. Need to modify `data_etl.py` and may impact existing code.
-2. As the number of data sources grows, the conditional statements in the `main` function become unwieldy and harder to maintain.
+1. Need to modify `data_etl.py` and may impact existing code and functionality.
+2. As the number of data sources grows, the conditional statements in the `transform_data` function become unwieldy and harder to maintain.
 
 ### Solution
-1. Adopt dynamic import modules by using `__import__` and `getattr`.
-2. Separate different datasource classes into seperate modules, `data_etl/datasource_a.py` and `data_etl/datasource_b.py`.
+1. Separate different datasource classes into seperate modules, `data_etl/datasource_a.py` and `data_etl/datasource_b.py`.
+2. Adopt dynamic import modules by using `__import__` and `getattr`.
 
-Here is the code
+Here is the code.
+
+
 ```python
-
 # data_etl/datasource_a.py
 class Datasource_A:
     def transform(self):
