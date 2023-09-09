@@ -14,7 +14,7 @@ Learn how to dynamically import modules in Python.
 
 In data processing pipelines, I had different data sources and transformation methods.
 
-In the beginning, I developed many `class` and use conditional statements to switch between different `class` to adopt correct data transformation method. Here is the code.
+In the beginning, I developed many classes and use conditional statements to switch between different classes to adopt correct data transformation method. Here is the code.
 
 ```python
 
