@@ -1,5 +1,5 @@
 # Dynamic-Import
-Learn how to dynamically import modules and classes in Python.
+Learn how to dynamically import modules in Python.
 
 - [Dynamic-Import](#dynamic-import)
   - [Project Introduction](#project-introduction)
