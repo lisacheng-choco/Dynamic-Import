@@ -46,6 +46,7 @@ However, It becomes a challenge while the new data source and transformation met
 2. As the number of data sources grows, the conditional statements in the `transform_data` function become unwieldy and harder to maintain.
 
 ### Solution
+For improvement, we need to modularize data source and use dynamic module import to achieve a more extensible and maintainable data transformer that can easily accommodate new data source as they emerge. Here are the main code changes:
 1. Separate different datasource classes into seperate modules, `data_etl/datasource_a.py` and `data_etl/datasource_b.py`.
 2. Adopt dynamic import modules by using `__import__` and `getattr`.
 
