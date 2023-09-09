@@ -56,6 +56,7 @@ class Datasource_B:
         print("Complete to transform Datasource_B")
 
 
+# main.py
 module_json = {
     "datasource_a": "data_etl.datasource_a.Datasource_A",
     "datasource_b": "data_etl.datasource_b.Datasource_B"
@@ -119,15 +120,15 @@ There are two existing data source:
 To specify solution and data source, you can use the `--solution` and `--datasource_name` options:
 
 ```bash
-python main.py --question-path solution_1 --solution-save-path datasource_a
+python main.py --solution solution_1 --datasource_name datasource_a
 ```
 ```bash
-python main.py --question-path solution_1 --solution-save-path datasource_b
+python main.py --solution solution_1 --datasource_name datasource_b
 ```
 ```bash
-python main.py --question-path solution_2 --solution-save-path datasource_a
+python main.py --solution solution_2 --datasource_name datasource_a
 ```
 ```bash
-python main.py --question-path solution_2 --solution-save-path datasource_b
+python main.py --solution solution_2 --datasource_name datasource_b
 ```
 
