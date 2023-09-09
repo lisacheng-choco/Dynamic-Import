@@ -1,0 +1,4 @@
+{
+    "datasource_a": "solution_2.data_etl.datasource_a.Datasource_A",
+    "datasource_b": "solution_2.data_etl.datasource_b.Datasource_B"
+}
